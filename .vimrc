@@ -3,6 +3,8 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set smartindent
+set guifont=Monaco:h12
+colorscheme peachpuff
 
 cd %:p:h
 
@@ -20,5 +22,7 @@ cd %:p:h
 
 :syntax on
 
-
 execute pathogen#infect()
+
+
+autocmd vimenter * NERDTree
